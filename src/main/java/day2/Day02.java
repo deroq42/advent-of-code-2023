@@ -39,7 +39,9 @@ public class Day02 extends Challenge {
             boolean isValidGame = true;
 
             for (Set set : game.getSets()) {
-                if (set.getRed() > 12 || set.getGreen() > 13 || set.getBlue() > 14) {
+                if (set.getRed() > 12 
+                    || set.getGreen() > 13 
+                    || set.getBlue() > 14) {
                     isValidGame = false;
                     break;
                 }
