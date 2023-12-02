@@ -72,12 +72,12 @@ public class Day01 extends Challenge {
     }
 
     private long parseNumber(String line) {
-        Character firstChar = null;
-        Character lastChar = null;
+        char firstChar = ' ';
+        char lastChar = ' ';
 
         for (char c : line.toCharArray()) {
             if (Character.isDigit(c)) {
-                if (firstChar == null) {
+                if (firstChar == ' ') {
                     firstChar = c;
                 }
                 lastChar = c;
