@@ -85,6 +85,7 @@ public class Day03 extends Challenge {
             }
         }
 
+
         System.out.println("Part 1: " + sum);
     }
 
