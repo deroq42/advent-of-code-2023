@@ -14,10 +14,6 @@ public class Day01 extends Challenge {
         super(1);
     }
 
-    public static void main(String[] args) {
-        new Day01();
-    }
-
     private static final Map<String, String> numberReplacements = Map.of(
             "one", "1",
             "two", "2",
@@ -85,5 +81,9 @@ public class Day01 extends Challenge {
         }
 
         return Long.parseLong(String.valueOf(firstChar) + lastChar);
+    }
+
+    public static void main(String[] args) {
+        new Day01();
     }
 }

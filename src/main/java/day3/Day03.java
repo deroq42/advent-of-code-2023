@@ -12,10 +12,6 @@ public class Day03 extends Challenge {
         super(3);
     }
 
-    public static void main(String[] args) {
-        new Day03();
-    }
-
     @Override
     public void firstPart() {
         int sum = 0;
@@ -122,5 +118,9 @@ public class Day03 extends Challenge {
     private boolean isValidSymbol(char c) {
         return !Character.isLetterOrDigit(c)
                 && c != '.';
+    }
+
+    public static void main(String[] args) {
+        new Day03();
     }
 }

@@ -20,10 +20,6 @@ public class Day02 extends Challenge {
         super(2);
     }
 
-    public static void main(String[] args) {
-        new Day02();
-    }
-
     @Override
     public void additionalSetup() {
         this.games = lines.stream()
@@ -110,5 +106,9 @@ public class Day02 extends Challenge {
         }
 
         return game;
+    }
+
+    public static void main(String[] args) {
+        new Day02();
     }
 }
