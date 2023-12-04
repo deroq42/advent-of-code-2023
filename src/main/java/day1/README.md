@@ -1,4 +1,4 @@
-**--- Day 1: Trebuchet?! ---**
+<h2><center>**--- Day 1: Trebuchet?! ---**</h2>
 Something is wrong with global snow production, and you've been selected to take a look. The Elves have even given you a map; on it, they've used stars to mark the top fifty locations that are likely to be having problems.
 
 You've been doing this long enough to know that to restore snow operations, you need to check all fifty stars by December 25th.
@@ -24,7 +24,7 @@ Consider your entire calibration document. What is the sum of all of the calibra
 
 Your puzzle answer was 55029.
 
-**--- Part Two ---**
+<h3><center>**--- Part Two ---**</h3>
 Your calculation isn't quite right. It looks like some of the digits are actually spelled out with letters: one, two, three, four, five, six, seven, eight, and nine also count as valid "digits".
 
 Equipped with this new information, you now need to find the real first and last digit on each line. For example:
