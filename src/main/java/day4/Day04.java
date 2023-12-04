@@ -51,11 +51,11 @@ public class Day04 extends Challenge {
     @Override
     public void secondPart() {
         Map<Integer, Integer> instances = new HashMap<>();
-        copyScratchCards(cards.get(0), instances);
+        this.copyScratchCards(cards.get(0), instances);
 
         int sum = instances.values().stream()
                 .reduce(Integer::sum)
-                .get();
+                .orElse(-1);
 
         System.out.println("Part 2: " + sum);
     }
@@ -75,12 +75,10 @@ public class Day04 extends Challenge {
                     continue;
                 }
 
-                final int number = Integer.parseInt(stringNumber);
-
                 if (i == 0) {
-                    card.getWinningNumbers().add(number);
+                    card.getWinningNumbers().add(Integer.parseInt(stringNumber));
                 } else {
-                    card.getWinningCandidates().add(number);
+                    card.getWinningCandidates().add(Integer.parseInt(stringNumber));
                 }
             }
         }
@@ -88,7 +86,7 @@ public class Day04 extends Challenge {
         return card;
     }
 
-    /* ScratchCards werden rekursiv "kopiert" / "instanziiert" */
+    // ScratchCards werden rekursiv "kopiert" / "instanziiert"
     private void copyScratchCards(ScratchCard card, Map<Integer, Integer> instances) {
         instances.putIfAbsent(card.getId(), 1);
 
