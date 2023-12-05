@@ -8,6 +8,7 @@ import challenge.Challenge;
  */
 public class Day03 extends Challenge {
 
+
     public Day03() {
         super(3);
     }

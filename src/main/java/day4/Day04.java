@@ -2,9 +2,7 @@ package day4;
 
 import challenge.Challenge;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * @author Miles
